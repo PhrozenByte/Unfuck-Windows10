@@ -147,8 +147,10 @@ function Remove-WindowsBloat {
         # Windows 10 AppX Apps
         "Microsoft.549981C3F5F10" # Cortana
         "Microsoft.BingNews"
+        "Microsoft.GamingApp"
         "Microsoft.GetHelp"
         "Microsoft.Getstarted"
+        "Microsoft.YourPhone"
         "Microsoft.Messaging"
         "Microsoft.Microsoft3DViewer"
         "Microsoft.MicrosoftOfficeHub"
@@ -161,24 +163,30 @@ function Remove-WindowsBloat {
         "Microsoft.Office.Sway"
         "Microsoft.OneConnect"
         "Microsoft.People"
+        "Microsoft.PowerAutomateDesktop"
         "Microsoft.Print3D"
         "Microsoft.RemoteDesktop"
         "Microsoft.SkypeApp"
         "Microsoft.StorePurchaseApp"
         "Microsoft.Office.Todo.List"
+        "Microsoft.Wallet"
         "Microsoft.Whiteboard"
         "Microsoft.WindowsAlarms"
         "Microsoft.WindowsFeedbackHub"
         "Microsoft.WindowsMaps"
         "Microsoft.WindowsSoundRecorder"
+        "Microsoft.Windows.DevHome"
         "Microsoft.ZuneMusic"
         "Microsoft.ZuneVideo"
 
-        "*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
-        "*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
+        "*Microsoft.Advertising.Xaml*"
         "*Microsoft.BingWeather*"
         "*Microsoft.MicrosoftStickyNotes*"
-        
+
+        "Clipchamp.Clipchamp"
+
+        #"Microsoft.MicrosoftEdge.Stable"
+        #"Microsoft.Todos"
         #"microsoft.windowscommunicationsapps" # Mail/Calendar
         #"Microsoft.WindowsCamera"
         #"*Microsoft.MSPaint*"
@@ -333,7 +341,7 @@ function Protect-Privacy {
 
 
     # Prevents bloatware applications from returning and removes Start Menu suggestions               
-    Write-Host "Adding egistry key to prevent bloatware apps from returning..." -ForegroundColor Yellow
+    Write-Host "Adding registry key to prevent bloatware apps from returning..." -ForegroundColor Yellow
     $registryPath = 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent'
     $registryOEM = 'Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager'
 
