@@ -408,6 +408,7 @@ function Protect-Privacy {
         "UsbCeip"
         "DmClient"
         "DmClientOnScenarioDownload"
+        "Microsoft Compatibility Appraiser"
     )
     foreach ($Task in $SchedTasks) {
         
