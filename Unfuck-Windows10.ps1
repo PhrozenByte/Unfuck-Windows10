@@ -145,8 +145,11 @@ function Remove-WindowsBloat {
     $Bloatware = @(
 
         # Windows 10 AppX Apps
+        "MicrosoftCorporationII.QuickAssist"
         "Microsoft.549981C3F5F10" # Cortana
         "Microsoft.BingNews"
+        "Microsoft.BingSearch"
+        "Microsoft.Copilot"
         "Microsoft.GamingApp"
         "Microsoft.GetHelp"
         "Microsoft.Getstarted"
@@ -184,14 +187,21 @@ function Remove-WindowsBloat {
         "*Microsoft.MicrosoftStickyNotes*"
 
         "Clipchamp.Clipchamp"
+        "MicrosoftWindows.CrossDevice"
+        "MSTeams"
 
         #"Microsoft.MicrosoftEdge.Stable"
+        #"Microsoft.OutlookForWindows"
+        #"Microsoft.Paint"
+        #"Microsoft.Photos"
+        #"Microsoft.ScreenSketch"
         #"Microsoft.Todos"
-        #"microsoft.windowscommunicationsapps" # Mail/Calendar
+        #"Microsoft.WindowsCalculator"
         #"Microsoft.WindowsCamera"
+        #"microsoft.windowscommunicationsapps" # Mail/Calendar
+        #"Microsoft.WindowsNotepad"
+        #"Microsoft.Windows.Photos"
         #"*Microsoft.MSPaint*"
-        #"*Microsoft.Windows.Photos*"
-        #"*Microsoft.WindowsCalculator*"
         #"*Microsoft.WindowsStore*"
         #"Microsoft.Xbox.TCUI"
         #"Microsoft.XboxApp"
